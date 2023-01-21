@@ -80,7 +80,7 @@ void insertion_sort_deck_kind(deck_node_t **deck)
 		while (insert != NULL && insert->card->kind > iter->card->kind)
 		{
 			insert->next = iter->next;
-			if (iter->next != NULL
+			if (iter->next != NULL)
 				iter->next->prev = insert;
 			iter->prev = insert->prev;
 			iter->next = insert;
